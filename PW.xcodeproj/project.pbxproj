@@ -1,0 +1,1538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		664465B3796BEF67374A1A98 /* Pods_PWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48506049DA4056A89F5B3AE5 /* Pods_PWTests.framework */; };
+		80A7AB72F02E9605198F515D /* Pods_PW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F59D175CA33B031D98EB62E /* Pods_PW.framework */; };
+		AFDE94A0C28097E544018667 /* Pods_PWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87C56097B9E9FE6FE04C2B2 /* Pods_PWUITests.framework */; };
+		C31CC33722521F2900A54281 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CC33622521F2900A54281 /* NetworkRequest.swift */; };
+		C31CC33922521F7500A54281 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CC33822521F7500A54281 /* NetworkRouter.swift */; };
+		C31CC33B2252228300A54281 /* URLRequestExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CC33A2252228300A54281 /* URLRequestExt.swift */; };
+		C31CC33E2252237F00A54281 /* PWTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31CC33D2252237F00A54281 /* PWTokenResponse.swift */; };
+		C3283E832251D93C00E44E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283E822251D93C00E44E58 /* AppDelegate.swift */; };
+		C3283E852251D93C00E44E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283E842251D93C00E44E58 /* ViewController.swift */; };
+		C3283E882251D93C00E44E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3283E862251D93C00E44E58 /* Main.storyboard */; };
+		C3283E8A2251D93D00E44E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3283E892251D93D00E44E58 /* Assets.xcassets */; };
+		C3283E8D2251D93D00E44E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3283E8B2251D93D00E44E58 /* LaunchScreen.storyboard */; };
+		C3283E982251D93D00E44E58 /* PWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283E972251D93D00E44E58 /* PWTests.swift */; };
+		C3283EA32251D93D00E44E58 /* PWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EA22251D93D00E44E58 /* PWUITests.swift */; };
+		C3283EB22251D9F300E44E58 /* PWViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EB12251D9F300E44E58 /* PWViewModel.swift */; };
+		C3283EB42251DA0100E44E58 /* PWWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EB32251DA0100E44E58 /* PWWireframe.swift */; };
+		C3283EB82251DA2900E44E58 /* PWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EB72251DA2900E44E58 /* PWNavigationController.swift */; };
+		C3283EBA2251DA3A00E44E58 /* PWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EB92251DA3A00E44E58 /* PWViewController.swift */; };
+		C3283EBC2251DA5000E44E58 /* PWRemoteDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EBB2251DA5000E44E58 /* PWRemoteDM.swift */; };
+		C3283EBE2251DA5F00E44E58 /* PWLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EBD2251DA5F00E44E58 /* PWLocalDM.swift */; };
+		C3283EC02251DA6E00E44E58 /* PWUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EBF2251DA6E00E44E58 /* PWUserDefaults.swift */; };
+		C3283EC42251DBFC00E44E58 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EC32251DBFC00E44E58 /* StringExt.swift */; };
+		C3283EC72251DCF500E44E58 /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EC62251DCF500E44E58 /* UIApplicationExt.swift */; };
+		C3283ECA2251DD4500E44E58 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EC92251DD4500E44E58 /* UIViewControllerExt.swift */; };
+		C3283ECC2251DDDD00E44E58 /* AppDelegateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283ECB2251DDDD00E44E58 /* AppDelegateExt.swift */; };
+		C3283ECE2251E00A00E44E58 /* PWConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283ECD2251E00A00E44E58 /* PWConstants.swift */; };
+		C3283ED52251E41A00E44E58 /* PWSplashScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283ED42251E41A00E44E58 /* PWSplashScreenVM.swift */; };
+		C3283ED72251E43100E44E58 /* PWSplaschScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283ED62251E43100E44E58 /* PWSplaschScreenWireframe.swift */; };
+		C3283ED92251E44700E44E58 /* PWSplashScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283ED82251E44700E44E58 /* PWSplashScreenInteractor.swift */; };
+		C3283EDD2251E47300E44E58 /* PWSplashScreenWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EDC2251E47300E44E58 /* PWSplashScreenWireframeProtocol.swift */; };
+		C3283EDF2251E48E00E44E58 /* PWSplashScreenInteractorPorotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EDE2251E48E00E44E58 /* PWSplashScreenInteractorPorotocol.swift */; };
+		C3283EE12251E4C700E44E58 /* PWSplashScreenVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EE02251E4C700E44E58 /* PWSplashScreenVCProtocol.swift */; };
+		C3283EE32251E4EC00E44E58 /* PWSplashScreenVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EE22251E4EC00E44E58 /* PWSplashScreenVMProtocol.swift */; };
+		C3283EE52251E50000E44E58 /* PWSPlashScreenLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EE42251E50000E44E58 /* PWSPlashScreenLocalDMProtocol.swift */; };
+		C3283EE72251E51500E44E58 /* PWSplashScreenRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EE62251E51500E44E58 /* PWSplashScreenRemoteDMProtocol.swift */; };
+		C3283EE92251E54E00E44E58 /* PWSplashScreenLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EE82251E54E00E44E58 /* PWSplashScreenLocalDM.swift */; };
+		C3283EEB2251E56800E44E58 /* PWSplashScreenRemoteDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EEA2251E56800E44E58 /* PWSplashScreenRemoteDM.swift */; };
+		C3283EEE2251E65500E44E58 /* PWSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EEC2251E65500E44E58 /* PWSplashScreenViewController.swift */; };
+		C3283EEF2251E65500E44E58 /* PWSplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3283EED2251E65500E44E58 /* PWSplashScreenViewController.xib */; };
+		C3283EF12251E6D100E44E58 /* NSObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EF02251E6D100E44E58 /* NSObjectExt.swift */; };
+		C3283F022251E97200E44E58 /* PWSignUpWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EF52251E97200E44E58 /* PWSignUpWireframe.swift */; };
+		C3283F032251E97200E44E58 /* PWSignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EF62251E97200E44E58 /* PWSignUpVM.swift */; };
+		C3283F042251E97200E44E58 /* PWSignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EF72251E97200E44E58 /* PWSignUpInteractor.swift */; };
+		C3283F052251E97200E44E58 /* PWSignUpRemoteDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EF92251E97200E44E58 /* PWSignUpRemoteDM.swift */; };
+		C3283F062251E97200E44E58 /* PWSignUpLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EFA2251E97200E44E58 /* PWSignUpLocalDM.swift */; };
+		C3283F072251E97200E44E58 /* PWSignUpLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EFC2251E97200E44E58 /* PWSignUpLocalDMProtocol.swift */; };
+		C3283F082251E97200E44E58 /* PWSignUpRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EFD2251E97200E44E58 /* PWSignUpRemoteDMProtocol.swift */; };
+		C3283F092251E97200E44E58 /* PWSignUpWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EFE2251E97200E44E58 /* PWSignUpWireframeProtocol.swift */; };
+		C3283F0A2251E97200E44E58 /* PWSignUpnteractorPorotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283EFF2251E97200E44E58 /* PWSignUpnteractorPorotocol.swift */; };
+		C3283F0B2251E97200E44E58 /* PWSignUpVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F002251E97200E44E58 /* PWSignUpVCProtocol.swift */; };
+		C3283F0C2251E97200E44E58 /* PWSignUpVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F012251E97200E44E58 /* PWSignUpVMProtocol.swift */; };
+		C3283F1A2251E98300E44E58 /* PWLoginRemoteDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F0E2251E98300E44E58 /* PWLoginRemoteDM.swift */; };
+		C3283F1B2251E98300E44E58 /* PWLoginLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F0F2251E98300E44E58 /* PWLoginLocalDM.swift */; };
+		C3283F1C2251E98300E44E58 /* PWLoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F102251E98300E44E58 /* PWLoginVM.swift */; };
+		C3283F1D2251E98300E44E58 /* PWSLoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F112251E98300E44E58 /* PWSLoginWireframe.swift */; };
+		C3283F1E2251E98300E44E58 /* PWLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F122251E98300E44E58 /* PWLoginInteractor.swift */; };
+		C3283F1F2251E98300E44E58 /* PWLoginLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F142251E98300E44E58 /* PWLoginLocalDMProtocol.swift */; };
+		C3283F202251E98300E44E58 /* PWLoginRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F152251E98300E44E58 /* PWLoginRemoteDMProtocol.swift */; };
+		C3283F212251E98300E44E58 /* PWLoginWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F162251E98300E44E58 /* PWLoginWireframeProtocol.swift */; };
+		C3283F222251E98300E44E58 /* PWLoginInteractorPorotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F172251E98300E44E58 /* PWLoginInteractorPorotocol.swift */; };
+		C3283F232251E98300E44E58 /* PWLoginVCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F182251E98300E44E58 /* PWLoginVCProtocol.swift */; };
+		C3283F242251E98300E44E58 /* PWLoginVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F192251E98300E44E58 /* PWLoginVMProtocol.swift */; };
+		C3283F282251EB2F00E44E58 /* PWLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F262251EB2F00E44E58 /* PWLoginVC.swift */; };
+		C3283F292251EB2F00E44E58 /* PWLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3283F272251EB2F00E44E58 /* PWLoginVC.xib */; };
+		C3283F2D2251EB8E00E44E58 /* PWSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F2B2251EB8E00E44E58 /* PWSignUpVC.swift */; };
+		C3283F2E2251EB8E00E44E58 /* PWSignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3283F2C2251EB8E00E44E58 /* PWSignUpVC.xib */; };
+		C3283F302251F0FA00E44E58 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3283F2F2251F0FA00E44E58 /* UITextView.swift */; };
+		C3342C542253546700426A67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3342C532253546700426A67 /* Localizable.strings */; };
+		C3342C58225362C200426A67 /* PWUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C57225362C200426A67 /* PWUserInfo.swift */; };
+		C3342C5A2253641E00426A67 /* PWUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C592253641E00426A67 /* PWUser.swift */; };
+		C3342C5C225364A100426A67 /* PWTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C5B225364A100426A67 /* PWTransaction.swift */; };
+		C3342C5E2253654300426A67 /* PWAddTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C5D2253654300426A67 /* PWAddTransaction.swift */; };
+		C3342C60225365A600426A67 /* PWHistoryTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C5F225365A600426A67 /* PWHistoryTransaction.swift */; };
+		C3342C6422545B5500426A67 /* PWItemHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C6222545B5500426A67 /* PWItemHistory.swift */; };
+		C3342C6522545B5500426A67 /* PWItemHistory.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3342C6322545B5500426A67 /* PWItemHistory.xib */; };
+		C3342C68225468B300426A67 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C67225468B300426A67 /* UIViewExt.swift */; };
+		C3342C6D225470D100426A67 /* ItemCreateTransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C6B225470D100426A67 /* ItemCreateTransactionCell.swift */; };
+		C3342C6E225470D100426A67 /* ItemCreateTransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3342C6C225470D100426A67 /* ItemCreateTransactionCell.xib */; };
+		C3342C7B225477D200426A67 /* PWSendTransactionLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C71225477D200426A67 /* PWSendTransactionLocalDMProtocol.swift */; };
+		C3342C7C225477D200426A67 /* PWSendTransactionWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C72225477D200426A67 /* PWSendTransactionWireframeProtocol.swift */; };
+		C3342C7D225477D200426A67 /* PWSendTransactionRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C73225477D200426A67 /* PWSendTransactionRemoteDMProtocol.swift */; };
+		C3342C7E225477D200426A67 /* PWSendTransactionRemoteDMswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C74225477D200426A67 /* PWSendTransactionRemoteDMswift.swift */; };
+		C3342C7F225477D200426A67 /* PWSendTransactionInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C75225477D200426A67 /* PWSendTransactionInteractorProtocol.swift */; };
+		C3342C80225477D200426A67 /* PWSendTransactionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C76225477D200426A67 /* PWSendTransactionVM.swift */; };
+		C3342C81225477D200426A67 /* PWSendTransactionLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C77225477D200426A67 /* PWSendTransactionLocalDM.swift */; };
+		C3342C82225477D200426A67 /* PWSendTransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C78225477D200426A67 /* PWSendTransactionInteractor.swift */; };
+		C3342C83225477D200426A67 /* PWSendTransactionVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C79225477D200426A67 /* PWSendTransactionVMProtocol.swift */; };
+		C3342C84225477D200426A67 /* PWSendTransactionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C7A225477D200426A67 /* PWSendTransactionWireframe.swift */; };
+		C3342C8A2254781800426A67 /* PWSendTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3342C882254781800426A67 /* PWSendTransactionVC.swift */; };
+		C3342C8B2254781800426A67 /* PWSendTransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3342C892254781800426A67 /* PWSendTransactionVC.xib */; };
+		C37D336522531B5500F69941 /* PWTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D336422531B5500F69941 /* PWTabBarVC.swift */; };
+		C37D336922531C1800F69941 /* MainScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D336822531C1800F69941 /* MainScreenVM.swift */; };
+		C37D336E22531C3A00F69941 /* MainScreenVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D336D22531C3A00F69941 /* MainScreenVMProtocol.swift */; };
+		C37D337022531C5500F69941 /* MainScreenLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D336F22531C5500F69941 /* MainScreenLocalDMProtocol.swift */; };
+		C37D337222531C6400F69941 /* MainScreenRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337122531C6400F69941 /* MainScreenRemoteDMProtocol.swift */; };
+		C37D337422531C7100F69941 /* MainScreenInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337322531C7100F69941 /* MainScreenInteractorProtocol.swift */; };
+		C37D337622531C7E00F69941 /* MainScreenWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337522531C7E00F69941 /* MainScreenWireframeProtocol.swift */; };
+		C37D337922531C9000F69941 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337722531C9000F69941 /* MainScreenVC.swift */; };
+		C37D337A22531C9000F69941 /* MainScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37D337822531C9000F69941 /* MainScreenVC.xib */; };
+		C37D337C22531CB400F69941 /* MainScreenLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337B22531CB400F69941 /* MainScreenLocalDM.swift */; };
+		C37D337E22531CC000F69941 /* MainScreenRemoteDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337D22531CC000F69941 /* MainScreenRemoteDM.swift */; };
+		C37D338022531CCD00F69941 /* MainScreenWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D337F22531CCD00F69941 /* MainScreenWireframe.swift */; };
+		C37D338222531CD800F69941 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D338122531CD800F69941 /* MainScreenInteractor.swift */; };
+		C37D34172253292C00F69941 /* PWHistoryTransactionLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D340D2253292B00F69941 /* PWHistoryTransactionLocalDMProtocol.swift */; };
+		C37D34182253292C00F69941 /* PWHistoryTransactionWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D340E2253292B00F69941 /* PWHistoryTransactionWireframeProtocol.swift */; };
+		C37D34192253292C00F69941 /* PWHistoryTransactionRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D340F2253292B00F69941 /* PWHistoryTransactionRemoteDMProtocol.swift */; };
+		C37D341A2253292C00F69941 /* PWHistoryTransactionRemoteDMswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34102253292B00F69941 /* PWHistoryTransactionRemoteDMswift.swift */; };
+		C37D341B2253292C00F69941 /* PWHistoryTransactionInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34112253292B00F69941 /* PWHistoryTransactionInteractorProtocol.swift */; };
+		C37D341C2253292C00F69941 /* PWHistoryTransactionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34122253292B00F69941 /* PWHistoryTransactionVM.swift */; };
+		C37D341D2253292C00F69941 /* PWHistoryTransactionLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34132253292B00F69941 /* PWHistoryTransactionLocalDM.swift */; };
+		C37D341E2253292C00F69941 /* PWHistoryTransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34142253292B00F69941 /* PWHistoryTransactionInteractor.swift */; };
+		C37D341F2253292C00F69941 /* PWHistoryTransactionVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34152253292B00F69941 /* PWHistoryTransactionVMProtocol.swift */; };
+		C37D34202253292C00F69941 /* PWHistoryTransactionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34162253292B00F69941 /* PWHistoryTransactionWireframe.swift */; };
+		C37D34262253297100F69941 /* PWHistoryTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D34242253297100F69941 /* PWHistoryTransactionVC.swift */; };
+		C37D34272253297100F69941 /* PWHistoryTransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37D34252253297100F69941 /* PWHistoryTransactionVC.xib */; };
+		C37D343222532A1A00F69941 /* PWCreateTransactionLocalDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342822532A1A00F69941 /* PWCreateTransactionLocalDMProtocol.swift */; };
+		C37D343322532A1A00F69941 /* PWCreateTransactionWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342922532A1A00F69941 /* PWCreateTransactionWireframeProtocol.swift */; };
+		C37D343422532A1A00F69941 /* PWCreateTransactionRemoteDMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342A22532A1A00F69941 /* PWCreateTransactionRemoteDMProtocol.swift */; };
+		C37D343522532A1A00F69941 /* PWCreateTransactionRemoteDMswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342B22532A1A00F69941 /* PWCreateTransactionRemoteDMswift.swift */; };
+		C37D343622532A1A00F69941 /* PWCreateTransactionInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342C22532A1A00F69941 /* PWCreateTransactionInteractorProtocol.swift */; };
+		C37D343722532A1A00F69941 /* PWCreateTransactionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342D22532A1A00F69941 /* PWCreateTransactionVM.swift */; };
+		C37D343822532A1A00F69941 /* PWCreateTransactionLocalDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342E22532A1A00F69941 /* PWCreateTransactionLocalDM.swift */; };
+		C37D343922532A1A00F69941 /* PWCreateTransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D342F22532A1A00F69941 /* PWCreateTransactionInteractor.swift */; };
+		C37D343A22532A1A00F69941 /* PWCreateTransactionVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D343022532A1A00F69941 /* PWCreateTransactionVMProtocol.swift */; };
+		C37D343B22532A1A00F69941 /* PWCreateTransactionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D343122532A1A00F69941 /* PWCreateTransactionWireframe.swift */; };
+		C37D344122532A4700F69941 /* PWCreateTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D343F22532A4700F69941 /* PWCreateTransaction.swift */; };
+		C37D344222532A4700F69941 /* PWCreateTransaction.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37D344022532A4700F69941 /* PWCreateTransaction.xib */; };
+		C37D344422532C4300F69941 /* PWTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D344322532C4300F69941 /* PWTabBarItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3283E942251D93D00E44E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3283E772251D93C00E44E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3283E7E2251D93C00E44E58;
+			remoteInfo = PW;
+		};
+		C3283E9F2251D93D00E44E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3283E772251D93C00E44E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3283E7E2251D93C00E44E58;
+			remoteInfo = PW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F59D175CA33B031D98EB62E /* Pods_PW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48506049DA4056A89F5B3AE5 /* Pods_PWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822AF8A00E7275F6F65A144F /* Pods-PWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWUITests/Pods-PWUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		837AE861973D047943437E57 /* Pods-PWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWTests/Pods-PWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84C653DF0889DDD96E23B311 /* Pods-PWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PWTests/Pods-PWTests.release.xcconfig"; sourceTree = "<group>"; };
+		99401FC0360E77E3E98D21E3 /* Pods-PWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PWUITests/Pods-PWUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC7A3A3BCC8CE2A64E5D1C8A /* Pods-PW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW.release.xcconfig"; path = "Pods/Target Support Files/Pods-PW/Pods-PW.release.xcconfig"; sourceTree = "<group>"; };
+		C31CC33622521F2900A54281 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		C31CC33822521F7500A54281 /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		C31CC33A2252228300A54281 /* URLRequestExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExt.swift; sourceTree = "<group>"; };
+		C31CC33D2252237F00A54281 /* PWTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTokenResponse.swift; sourceTree = "<group>"; };
+		C3283E7F2251D93C00E44E58 /* PW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3283E822251D93C00E44E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3283E842251D93C00E44E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3283E872251D93C00E44E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3283E892251D93D00E44E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3283E8C2251D93D00E44E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3283E8E2251D93D00E44E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3283E932251D93D00E44E58 /* PWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3283E972251D93D00E44E58 /* PWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTests.swift; sourceTree = "<group>"; };
+		C3283E992251D93D00E44E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3283E9E2251D93D00E44E58 /* PWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3283EA22251D93D00E44E58 /* PWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWUITests.swift; sourceTree = "<group>"; };
+		C3283EA42251D93D00E44E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3283EB12251D9F300E44E58 /* PWViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWViewModel.swift; sourceTree = "<group>"; };
+		C3283EB32251DA0100E44E58 /* PWWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWWireframe.swift; sourceTree = "<group>"; };
+		C3283EB72251DA2900E44E58 /* PWNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWNavigationController.swift; sourceTree = "<group>"; };
+		C3283EB92251DA3A00E44E58 /* PWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWViewController.swift; sourceTree = "<group>"; };
+		C3283EBB2251DA5000E44E58 /* PWRemoteDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWRemoteDM.swift; sourceTree = "<group>"; };
+		C3283EBD2251DA5F00E44E58 /* PWLocalDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWLocalDM.swift; sourceTree = "<group>"; };
+		C3283EBF2251DA6E00E44E58 /* PWUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWUserDefaults.swift; sourceTree = "<group>"; };
+		C3283EC32251DBFC00E44E58 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		C3283EC62251DCF500E44E58 /* UIApplicationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
+		C3283EC92251DD4500E44E58 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		C3283ECB2251DDDD00E44E58 /* AppDelegateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExt.swift; sourceTree = "<group>"; };
+		C3283ECD2251E00A00E44E58 /* PWConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWConstants.swift; sourceTree = "<group>"; };
+		C3283ED42251E41A00E44E58 /* PWSplashScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenVM.swift; sourceTree = "<group>"; };
+		C3283ED62251E43100E44E58 /* PWSplaschScreenWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplaschScreenWireframe.swift; sourceTree = "<group>"; };
+		C3283ED82251E44700E44E58 /* PWSplashScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenInteractor.swift; sourceTree = "<group>"; };
+		C3283EDC2251E47300E44E58 /* PWSplashScreenWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenWireframeProtocol.swift; sourceTree = "<group>"; };
+		C3283EDE2251E48E00E44E58 /* PWSplashScreenInteractorPorotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenInteractorPorotocol.swift; sourceTree = "<group>"; };
+		C3283EE02251E4C700E44E58 /* PWSplashScreenVCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenVCProtocol.swift; sourceTree = "<group>"; };
+		C3283EE22251E4EC00E44E58 /* PWSplashScreenVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenVMProtocol.swift; sourceTree = "<group>"; };
+		C3283EE42251E50000E44E58 /* PWSPlashScreenLocalDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSPlashScreenLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C3283EE62251E51500E44E58 /* PWSplashScreenRemoteDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C3283EE82251E54E00E44E58 /* PWSplashScreenLocalDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenLocalDM.swift; sourceTree = "<group>"; };
+		C3283EEA2251E56800E44E58 /* PWSplashScreenRemoteDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenRemoteDM.swift; sourceTree = "<group>"; };
+		C3283EEC2251E65500E44E58 /* PWSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSplashScreenViewController.swift; sourceTree = "<group>"; };
+		C3283EED2251E65500E44E58 /* PWSplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWSplashScreenViewController.xib; sourceTree = "<group>"; };
+		C3283EF02251E6D100E44E58 /* NSObjectExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExt.swift; sourceTree = "<group>"; };
+		C3283EF52251E97200E44E58 /* PWSignUpWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpWireframe.swift; sourceTree = "<group>"; };
+		C3283EF62251E97200E44E58 /* PWSignUpVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpVM.swift; sourceTree = "<group>"; };
+		C3283EF72251E97200E44E58 /* PWSignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpInteractor.swift; sourceTree = "<group>"; };
+		C3283EF92251E97200E44E58 /* PWSignUpRemoteDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpRemoteDM.swift; sourceTree = "<group>"; };
+		C3283EFA2251E97200E44E58 /* PWSignUpLocalDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpLocalDM.swift; sourceTree = "<group>"; };
+		C3283EFC2251E97200E44E58 /* PWSignUpLocalDMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C3283EFD2251E97200E44E58 /* PWSignUpRemoteDMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C3283EFE2251E97200E44E58 /* PWSignUpWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpWireframeProtocol.swift; sourceTree = "<group>"; };
+		C3283EFF2251E97200E44E58 /* PWSignUpnteractorPorotocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpnteractorPorotocol.swift; sourceTree = "<group>"; };
+		C3283F002251E97200E44E58 /* PWSignUpVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpVCProtocol.swift; sourceTree = "<group>"; };
+		C3283F012251E97200E44E58 /* PWSignUpVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSignUpVMProtocol.swift; sourceTree = "<group>"; };
+		C3283F0E2251E98300E44E58 /* PWLoginRemoteDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginRemoteDM.swift; sourceTree = "<group>"; };
+		C3283F0F2251E98300E44E58 /* PWLoginLocalDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginLocalDM.swift; sourceTree = "<group>"; };
+		C3283F102251E98300E44E58 /* PWLoginVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginVM.swift; sourceTree = "<group>"; };
+		C3283F112251E98300E44E58 /* PWSLoginWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWSLoginWireframe.swift; sourceTree = "<group>"; };
+		C3283F122251E98300E44E58 /* PWLoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginInteractor.swift; sourceTree = "<group>"; };
+		C3283F142251E98300E44E58 /* PWLoginLocalDMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C3283F152251E98300E44E58 /* PWLoginRemoteDMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C3283F162251E98300E44E58 /* PWLoginWireframeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginWireframeProtocol.swift; sourceTree = "<group>"; };
+		C3283F172251E98300E44E58 /* PWLoginInteractorPorotocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginInteractorPorotocol.swift; sourceTree = "<group>"; };
+		C3283F182251E98300E44E58 /* PWLoginVCProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginVCProtocol.swift; sourceTree = "<group>"; };
+		C3283F192251E98300E44E58 /* PWLoginVMProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PWLoginVMProtocol.swift; sourceTree = "<group>"; };
+		C3283F262251EB2F00E44E58 /* PWLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWLoginVC.swift; sourceTree = "<group>"; };
+		C3283F272251EB2F00E44E58 /* PWLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWLoginVC.xib; sourceTree = "<group>"; };
+		C3283F2B2251EB8E00E44E58 /* PWSignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSignUpVC.swift; sourceTree = "<group>"; };
+		C3283F2C2251EB8E00E44E58 /* PWSignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWSignUpVC.xib; sourceTree = "<group>"; };
+		C3283F2F2251F0FA00E44E58 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		C3342C532253546700426A67 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C3342C57225362C200426A67 /* PWUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWUserInfo.swift; sourceTree = "<group>"; };
+		C3342C592253641E00426A67 /* PWUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWUser.swift; sourceTree = "<group>"; };
+		C3342C5B225364A100426A67 /* PWTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTransaction.swift; sourceTree = "<group>"; };
+		C3342C5D2253654300426A67 /* PWAddTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWAddTransaction.swift; sourceTree = "<group>"; };
+		C3342C5F225365A600426A67 /* PWHistoryTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransaction.swift; sourceTree = "<group>"; };
+		C3342C6222545B5500426A67 /* PWItemHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWItemHistory.swift; sourceTree = "<group>"; };
+		C3342C6322545B5500426A67 /* PWItemHistory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWItemHistory.xib; sourceTree = "<group>"; };
+		C3342C67225468B300426A67 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		C3342C6B225470D100426A67 /* ItemCreateTransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCreateTransactionCell.swift; sourceTree = "<group>"; };
+		C3342C6C225470D100426A67 /* ItemCreateTransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCreateTransactionCell.xib; sourceTree = "<group>"; };
+		C3342C71225477D200426A67 /* PWSendTransactionLocalDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C3342C72225477D200426A67 /* PWSendTransactionWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionWireframeProtocol.swift; sourceTree = "<group>"; };
+		C3342C73225477D200426A67 /* PWSendTransactionRemoteDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C3342C74225477D200426A67 /* PWSendTransactionRemoteDMswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionRemoteDMswift.swift; sourceTree = "<group>"; };
+		C3342C75225477D200426A67 /* PWSendTransactionInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionInteractorProtocol.swift; sourceTree = "<group>"; };
+		C3342C76225477D200426A67 /* PWSendTransactionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionVM.swift; sourceTree = "<group>"; };
+		C3342C77225477D200426A67 /* PWSendTransactionLocalDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionLocalDM.swift; sourceTree = "<group>"; };
+		C3342C78225477D200426A67 /* PWSendTransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionInteractor.swift; sourceTree = "<group>"; };
+		C3342C79225477D200426A67 /* PWSendTransactionVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionVMProtocol.swift; sourceTree = "<group>"; };
+		C3342C7A225477D200426A67 /* PWSendTransactionWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionWireframe.swift; sourceTree = "<group>"; };
+		C3342C882254781800426A67 /* PWSendTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSendTransactionVC.swift; sourceTree = "<group>"; };
+		C3342C892254781800426A67 /* PWSendTransactionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWSendTransactionVC.xib; sourceTree = "<group>"; };
+		C37D336422531B5500F69941 /* PWTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTabBarVC.swift; sourceTree = "<group>"; };
+		C37D336822531C1800F69941 /* MainScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVM.swift; sourceTree = "<group>"; };
+		C37D336D22531C3A00F69941 /* MainScreenVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVMProtocol.swift; sourceTree = "<group>"; };
+		C37D336F22531C5500F69941 /* MainScreenLocalDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C37D337122531C6400F69941 /* MainScreenRemoteDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C37D337322531C7100F69941 /* MainScreenInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractorProtocol.swift; sourceTree = "<group>"; };
+		C37D337522531C7E00F69941 /* MainScreenWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenWireframeProtocol.swift; sourceTree = "<group>"; };
+		C37D337722531C9000F69941 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		C37D337822531C9000F69941 /* MainScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenVC.xib; sourceTree = "<group>"; };
+		C37D337B22531CB400F69941 /* MainScreenLocalDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenLocalDM.swift; sourceTree = "<group>"; };
+		C37D337D22531CC000F69941 /* MainScreenRemoteDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenRemoteDM.swift; sourceTree = "<group>"; };
+		C37D337F22531CCD00F69941 /* MainScreenWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenWireframe.swift; sourceTree = "<group>"; };
+		C37D338122531CD800F69941 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		C37D340D2253292B00F69941 /* PWHistoryTransactionLocalDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C37D340E2253292B00F69941 /* PWHistoryTransactionWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionWireframeProtocol.swift; sourceTree = "<group>"; };
+		C37D340F2253292B00F69941 /* PWHistoryTransactionRemoteDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C37D34102253292B00F69941 /* PWHistoryTransactionRemoteDMswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionRemoteDMswift.swift; sourceTree = "<group>"; };
+		C37D34112253292B00F69941 /* PWHistoryTransactionInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionInteractorProtocol.swift; sourceTree = "<group>"; };
+		C37D34122253292B00F69941 /* PWHistoryTransactionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionVM.swift; sourceTree = "<group>"; };
+		C37D34132253292B00F69941 /* PWHistoryTransactionLocalDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionLocalDM.swift; sourceTree = "<group>"; };
+		C37D34142253292B00F69941 /* PWHistoryTransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionInteractor.swift; sourceTree = "<group>"; };
+		C37D34152253292B00F69941 /* PWHistoryTransactionVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionVMProtocol.swift; sourceTree = "<group>"; };
+		C37D34162253292B00F69941 /* PWHistoryTransactionWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionWireframe.swift; sourceTree = "<group>"; };
+		C37D34242253297100F69941 /* PWHistoryTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWHistoryTransactionVC.swift; sourceTree = "<group>"; };
+		C37D34252253297100F69941 /* PWHistoryTransactionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWHistoryTransactionVC.xib; sourceTree = "<group>"; };
+		C37D342822532A1A00F69941 /* PWCreateTransactionLocalDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionLocalDMProtocol.swift; sourceTree = "<group>"; };
+		C37D342922532A1A00F69941 /* PWCreateTransactionWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionWireframeProtocol.swift; sourceTree = "<group>"; };
+		C37D342A22532A1A00F69941 /* PWCreateTransactionRemoteDMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionRemoteDMProtocol.swift; sourceTree = "<group>"; };
+		C37D342B22532A1A00F69941 /* PWCreateTransactionRemoteDMswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionRemoteDMswift.swift; sourceTree = "<group>"; };
+		C37D342C22532A1A00F69941 /* PWCreateTransactionInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionInteractorProtocol.swift; sourceTree = "<group>"; };
+		C37D342D22532A1A00F69941 /* PWCreateTransactionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionVM.swift; sourceTree = "<group>"; };
+		C37D342E22532A1A00F69941 /* PWCreateTransactionLocalDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionLocalDM.swift; sourceTree = "<group>"; };
+		C37D342F22532A1A00F69941 /* PWCreateTransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionInteractor.swift; sourceTree = "<group>"; };
+		C37D343022532A1A00F69941 /* PWCreateTransactionVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionVMProtocol.swift; sourceTree = "<group>"; };
+		C37D343122532A1A00F69941 /* PWCreateTransactionWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransactionWireframe.swift; sourceTree = "<group>"; };
+		C37D343F22532A4700F69941 /* PWCreateTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWCreateTransaction.swift; sourceTree = "<group>"; };
+		C37D344022532A4700F69941 /* PWCreateTransaction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PWCreateTransaction.xib; sourceTree = "<group>"; };
+		C37D344322532C4300F69941 /* PWTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWTabBarItem.swift; sourceTree = "<group>"; };
+		D51D0E356B8E348F472AE5FA /* Pods-PW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PW/Pods-PW.debug.xcconfig"; sourceTree = "<group>"; };
+		D87C56097B9E9FE6FE04C2B2 /* Pods_PWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3283E7C2251D93C00E44E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A7AB72F02E9605198F515D /* Pods_PW.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3283E902251D93D00E44E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664465B3796BEF67374A1A98 /* Pods_PWTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3283E9B2251D93D00E44E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDE94A0C28097E544018667 /* Pods_PWUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D761FDD2BF6CD46C9B70CDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D51D0E356B8E348F472AE5FA /* Pods-PW.debug.xcconfig */,
+				BC7A3A3BCC8CE2A64E5D1C8A /* Pods-PW.release.xcconfig */,
+				837AE861973D047943437E57 /* Pods-PWTests.debug.xcconfig */,
+				84C653DF0889DDD96E23B311 /* Pods-PWTests.release.xcconfig */,
+				822AF8A00E7275F6F65A144F /* Pods-PWUITests.debug.xcconfig */,
+				99401FC0360E77E3E98D21E3 /* Pods-PWUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C31CC33522521F0200A54281 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C31CC33622521F2900A54281 /* NetworkRequest.swift */,
+				C31CC33822521F7500A54281 /* NetworkRouter.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C31CC33C2252233A00A54281 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C31CC33D2252237F00A54281 /* PWTokenResponse.swift */,
+				C3342C57225362C200426A67 /* PWUserInfo.swift */,
+				C3342C592253641E00426A67 /* PWUser.swift */,
+				C3342C5B225364A100426A67 /* PWTransaction.swift */,
+				C3342C5D2253654300426A67 /* PWAddTransaction.swift */,
+				C3342C5F225365A600426A67 /* PWHistoryTransaction.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C3283E762251D93C00E44E58 = {
+			isa = PBXGroup;
+			children = (
+				C3283E812251D93C00E44E58 /* PW */,
+				C3283E962251D93D00E44E58 /* PWTests */,
+				C3283EA12251D93D00E44E58 /* PWUITests */,
+				C3283E802251D93C00E44E58 /* Products */,
+				5D761FDD2BF6CD46C9B70CDB /* Pods */,
+				D1AA4CDAEC60D41A6480307B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3283E802251D93C00E44E58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3283E7F2251D93C00E44E58 /* PW.app */,
+				C3283E932251D93D00E44E58 /* PWTests.xctest */,
+				C3283E9E2251D93D00E44E58 /* PWUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3283E812251D93C00E44E58 /* PW */ = {
+			isa = PBXGroup;
+			children = (
+				C31CC33C2252233A00A54281 /* Entities */,
+				C3283ECF2251E3DE00E44E58 /* Modules */,
+				C3283EC12251DBE600E44E58 /* Common */,
+				C3283EB02251D9DE00E44E58 /* Viper */,
+				C3283E822251D93C00E44E58 /* AppDelegate.swift */,
+				C3283E842251D93C00E44E58 /* ViewController.swift */,
+				C3283E862251D93C00E44E58 /* Main.storyboard */,
+				C3283E892251D93D00E44E58 /* Assets.xcassets */,
+				C3283E8B2251D93D00E44E58 /* LaunchScreen.storyboard */,
+				C3283E8E2251D93D00E44E58 /* Info.plist */,
+				C3342C532253546700426A67 /* Localizable.strings */,
+			);
+			path = PW;
+			sourceTree = "<group>";
+		};
+		C3283E962251D93D00E44E58 /* PWTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3283E972251D93D00E44E58 /* PWTests.swift */,
+				C3283E992251D93D00E44E58 /* Info.plist */,
+			);
+			path = PWTests;
+			sourceTree = "<group>";
+		};
+		C3283EA12251D93D00E44E58 /* PWUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EA22251D93D00E44E58 /* PWUITests.swift */,
+				C3283EA42251D93D00E44E58 /* Info.plist */,
+			);
+			path = PWUITests;
+			sourceTree = "<group>";
+		};
+		C3283EB02251D9DE00E44E58 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				C31CC33522521F0200A54281 /* Networking */,
+				C3283EB62251DA0C00E44E58 /* DataManager */,
+				C3283EB52251DA0500E44E58 /* View */,
+				C3283EB12251D9F300E44E58 /* PWViewModel.swift */,
+				C3283EB32251DA0100E44E58 /* PWWireframe.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		C3283EB52251DA0500E44E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EB72251DA2900E44E58 /* PWNavigationController.swift */,
+				C3283EB92251DA3A00E44E58 /* PWViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3283EB62251DA0C00E44E58 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EBB2251DA5000E44E58 /* PWRemoteDM.swift */,
+				C3283EBD2251DA5F00E44E58 /* PWLocalDM.swift */,
+				C3283EBF2251DA6E00E44E58 /* PWUserDefaults.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C3283EC12251DBE600E44E58 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EC52251DC3800E44E58 /* Fonts */,
+				C3283EC22251DBEC00E44E58 /* Extension */,
+				C3283ECB2251DDDD00E44E58 /* AppDelegateExt.swift */,
+				C3283ECD2251E00A00E44E58 /* PWConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C3283EC22251DBEC00E44E58 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EC82251DD3000E44E58 /* UI */,
+				C3283EF02251E6D100E44E58 /* NSObjectExt.swift */,
+				C31CC33A2252228300A54281 /* URLRequestExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C3283EC52251DC3800E44E58 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C3283EC82251DD3000E44E58 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EC32251DBFC00E44E58 /* StringExt.swift */,
+				C3283EC62251DCF500E44E58 /* UIApplicationExt.swift */,
+				C3283EC92251DD4500E44E58 /* UIViewControllerExt.swift */,
+				C3283F2F2251F0FA00E44E58 /* UITextView.swift */,
+				C3342C67225468B300426A67 /* UIViewExt.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C3283ECF2251E3DE00E44E58 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C70225477BE00426A67 /* SendTransaction */,
+				C37D336722531C0000F69941 /* CreateTransaction */,
+				C37D336622531BEE00F69941 /* HistoryTransaction */,
+				C37D336322531B3C00F69941 /* TapBar */,
+				C37D336222531AFF00F69941 /* MainScreen */,
+				C3283EF22251E91100E44E58 /* Login And SignUp */,
+				C3283ED02251E3E400E44E58 /* Splash */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C3283ED02251E3E400E44E58 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C3283ED32251E40100E44E58 /* Protocols */,
+				C3283ED22251E3F500E44E58 /* DataManager */,
+				C3283ED12251E3ED00E44E58 /* View */,
+				C3283ED42251E41A00E44E58 /* PWSplashScreenVM.swift */,
+				C3283ED62251E43100E44E58 /* PWSplaschScreenWireframe.swift */,
+				C3283ED82251E44700E44E58 /* PWSplashScreenInteractor.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C3283ED12251E3ED00E44E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EEC2251E65500E44E58 /* PWSplashScreenViewController.swift */,
+				C3283EED2251E65500E44E58 /* PWSplashScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3283ED22251E3F500E44E58 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EE82251E54E00E44E58 /* PWSplashScreenLocalDM.swift */,
+				C3283EEA2251E56800E44E58 /* PWSplashScreenRemoteDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C3283ED32251E40100E44E58 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EDC2251E47300E44E58 /* PWSplashScreenWireframeProtocol.swift */,
+				C3283EDE2251E48E00E44E58 /* PWSplashScreenInteractorPorotocol.swift */,
+				C3283EE02251E4C700E44E58 /* PWSplashScreenVCProtocol.swift */,
+				C3283EE22251E4EC00E44E58 /* PWSplashScreenVMProtocol.swift */,
+				C3283EE42251E50000E44E58 /* PWSPlashScreenLocalDMProtocol.swift */,
+				C3283EE62251E51500E44E58 /* PWSplashScreenRemoteDMProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C3283EF22251E91100E44E58 /* Login And SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EF42251E94100E44E58 /* SignUp */,
+				C3283EF32251E93300E44E58 /* Login */,
+			);
+			path = "Login And SignUp";
+			sourceTree = "<group>";
+		};
+		C3283EF32251E93300E44E58 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C3283F252251EB0D00E44E58 /* View */,
+				C3283F0D2251E98300E44E58 /* DataManager */,
+				C3283F132251E98300E44E58 /* Protocols */,
+				C3283F112251E98300E44E58 /* PWSLoginWireframe.swift */,
+				C3283F122251E98300E44E58 /* PWLoginInteractor.swift */,
+				C3283F102251E98300E44E58 /* PWLoginVM.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C3283EF42251E94100E44E58 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				C3283F2A2251EB7B00E44E58 /* View */,
+				C3283EF82251E97200E44E58 /* DataManager */,
+				C3283EFB2251E97200E44E58 /* Protocols */,
+				C3283EF52251E97200E44E58 /* PWSignUpWireframe.swift */,
+				C3283EF72251E97200E44E58 /* PWSignUpInteractor.swift */,
+				C3283EF62251E97200E44E58 /* PWSignUpVM.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		C3283EF82251E97200E44E58 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EF92251E97200E44E58 /* PWSignUpRemoteDM.swift */,
+				C3283EFA2251E97200E44E58 /* PWSignUpLocalDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C3283EFB2251E97200E44E58 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C3283EFC2251E97200E44E58 /* PWSignUpLocalDMProtocol.swift */,
+				C3283EFD2251E97200E44E58 /* PWSignUpRemoteDMProtocol.swift */,
+				C3283EFE2251E97200E44E58 /* PWSignUpWireframeProtocol.swift */,
+				C3283EFF2251E97200E44E58 /* PWSignUpnteractorPorotocol.swift */,
+				C3283F002251E97200E44E58 /* PWSignUpVCProtocol.swift */,
+				C3283F012251E97200E44E58 /* PWSignUpVMProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C3283F0D2251E98300E44E58 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3283F0E2251E98300E44E58 /* PWLoginRemoteDM.swift */,
+				C3283F0F2251E98300E44E58 /* PWLoginLocalDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C3283F132251E98300E44E58 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C3283F142251E98300E44E58 /* PWLoginLocalDMProtocol.swift */,
+				C3283F152251E98300E44E58 /* PWLoginRemoteDMProtocol.swift */,
+				C3283F162251E98300E44E58 /* PWLoginWireframeProtocol.swift */,
+				C3283F172251E98300E44E58 /* PWLoginInteractorPorotocol.swift */,
+				C3283F182251E98300E44E58 /* PWLoginVCProtocol.swift */,
+				C3283F192251E98300E44E58 /* PWLoginVMProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C3283F252251EB0D00E44E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3283F262251EB2F00E44E58 /* PWLoginVC.swift */,
+				C3283F272251EB2F00E44E58 /* PWLoginVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3283F2A2251EB7B00E44E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3283F2B2251EB8E00E44E58 /* PWSignUpVC.swift */,
+				C3283F2C2251EB8E00E44E58 /* PWSignUpVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3342C6122545B3600426A67 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C6222545B5500426A67 /* PWItemHistory.swift */,
+				C3342C6322545B5500426A67 /* PWItemHistory.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		C3342C6A225470B300426A67 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C6B225470D100426A67 /* ItemCreateTransactionCell.swift */,
+				C3342C6C225470D100426A67 /* ItemCreateTransactionCell.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		C3342C70225477BE00426A67 /* SendTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C87225477E800426A67 /* DataManager */,
+				C3342C86225477DC00426A67 /* View */,
+				C3342C85225477D600426A67 /* Protocols */,
+				C3342C76225477D200426A67 /* PWSendTransactionVM.swift */,
+				C3342C78225477D200426A67 /* PWSendTransactionInteractor.swift */,
+				C3342C7A225477D200426A67 /* PWSendTransactionWireframe.swift */,
+			);
+			path = SendTransaction;
+			sourceTree = "<group>";
+		};
+		C3342C85225477D600426A67 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C71225477D200426A67 /* PWSendTransactionLocalDMProtocol.swift */,
+				C3342C72225477D200426A67 /* PWSendTransactionWireframeProtocol.swift */,
+				C3342C73225477D200426A67 /* PWSendTransactionRemoteDMProtocol.swift */,
+				C3342C75225477D200426A67 /* PWSendTransactionInteractorProtocol.swift */,
+				C3342C79225477D200426A67 /* PWSendTransactionVMProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C3342C86225477DC00426A67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C882254781800426A67 /* PWSendTransactionVC.swift */,
+				C3342C892254781800426A67 /* PWSendTransactionVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3342C87225477E800426A67 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C74225477D200426A67 /* PWSendTransactionRemoteDMswift.swift */,
+				C3342C77225477D200426A67 /* PWSendTransactionLocalDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C37D336222531AFF00F69941 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C37D336C22531C2500F69941 /* DataManager */,
+				C37D336B22531C2000F69941 /* View */,
+				C37D336A22531C1B00F69941 /* Protocols */,
+				C37D336822531C1800F69941 /* MainScreenVM.swift */,
+				C37D337F22531CCD00F69941 /* MainScreenWireframe.swift */,
+				C37D338122531CD800F69941 /* MainScreenInteractor.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		C37D336322531B3C00F69941 /* TapBar */ = {
+			isa = PBXGroup;
+			children = (
+				C37D336422531B5500F69941 /* PWTabBarVC.swift */,
+				C37D344322532C4300F69941 /* PWTabBarItem.swift */,
+			);
+			path = TapBar;
+			sourceTree = "<group>";
+		};
+		C37D336622531BEE00F69941 /* HistoryTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				C37D34232253294600F69941 /* DataManager */,
+				C37D34222253293D00F69941 /* View */,
+				C37D34212253293200F69941 /* Protocols */,
+				C37D34122253292B00F69941 /* PWHistoryTransactionVM.swift */,
+				C37D34142253292B00F69941 /* PWHistoryTransactionInteractor.swift */,
+				C37D34162253292B00F69941 /* PWHistoryTransactionWireframe.swift */,
+			);
+			path = HistoryTransaction;
+			sourceTree = "<group>";
+		};
+		C37D336722531C0000F69941 /* CreateTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				C37D343E22532A2B00F69941 /* DataManager */,
+				C37D343D22532A2600F69941 /* View */,
+				C37D343C22532A1E00F69941 /* Protocols */,
+				C37D342D22532A1A00F69941 /* PWCreateTransactionVM.swift */,
+				C37D342F22532A1A00F69941 /* PWCreateTransactionInteractor.swift */,
+				C37D343122532A1A00F69941 /* PWCreateTransactionWireframe.swift */,
+			);
+			path = CreateTransaction;
+			sourceTree = "<group>";
+		};
+		C37D336A22531C1B00F69941 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C37D336D22531C3A00F69941 /* MainScreenVMProtocol.swift */,
+				C37D336F22531C5500F69941 /* MainScreenLocalDMProtocol.swift */,
+				C37D337122531C6400F69941 /* MainScreenRemoteDMProtocol.swift */,
+				C37D337322531C7100F69941 /* MainScreenInteractorProtocol.swift */,
+				C37D337522531C7E00F69941 /* MainScreenWireframeProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C37D336B22531C2000F69941 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C37D337722531C9000F69941 /* MainScreenVC.swift */,
+				C37D337822531C9000F69941 /* MainScreenVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C37D336C22531C2500F69941 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C37D337B22531CB400F69941 /* MainScreenLocalDM.swift */,
+				C37D337D22531CC000F69941 /* MainScreenRemoteDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C37D34212253293200F69941 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C37D340D2253292B00F69941 /* PWHistoryTransactionLocalDMProtocol.swift */,
+				C37D340E2253292B00F69941 /* PWHistoryTransactionWireframeProtocol.swift */,
+				C37D340F2253292B00F69941 /* PWHistoryTransactionRemoteDMProtocol.swift */,
+				C37D34112253292B00F69941 /* PWHistoryTransactionInteractorProtocol.swift */,
+				C37D34152253292B00F69941 /* PWHistoryTransactionVMProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C37D34222253293D00F69941 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C6122545B3600426A67 /* Item */,
+				C37D34242253297100F69941 /* PWHistoryTransactionVC.swift */,
+				C37D34252253297100F69941 /* PWHistoryTransactionVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C37D34232253294600F69941 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C37D34102253292B00F69941 /* PWHistoryTransactionRemoteDMswift.swift */,
+				C37D34132253292B00F69941 /* PWHistoryTransactionLocalDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		C37D343C22532A1E00F69941 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C37D342822532A1A00F69941 /* PWCreateTransactionLocalDMProtocol.swift */,
+				C37D342922532A1A00F69941 /* PWCreateTransactionWireframeProtocol.swift */,
+				C37D342A22532A1A00F69941 /* PWCreateTransactionRemoteDMProtocol.swift */,
+				C37D342C22532A1A00F69941 /* PWCreateTransactionInteractorProtocol.swift */,
+				C37D343022532A1A00F69941 /* PWCreateTransactionVMProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C37D343D22532A2600F69941 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3342C6A225470B300426A67 /* Item */,
+				C37D343F22532A4700F69941 /* PWCreateTransaction.swift */,
+				C37D344022532A4700F69941 /* PWCreateTransaction.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C37D343E22532A2B00F69941 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C37D342B22532A1A00F69941 /* PWCreateTransactionRemoteDMswift.swift */,
+				C37D342E22532A1A00F69941 /* PWCreateTransactionLocalDM.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		D1AA4CDAEC60D41A6480307B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F59D175CA33B031D98EB62E /* Pods_PW.framework */,
+				48506049DA4056A89F5B3AE5 /* Pods_PWTests.framework */,
+				D87C56097B9E9FE6FE04C2B2 /* Pods_PWUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3283E7E2251D93C00E44E58 /* PW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3283EA72251D93D00E44E58 /* Build configuration list for PBXNativeTarget "PW" */;
+			buildPhases = (
+				CB3F2C34803FFC19FDFA42B4 /* [CP] Check Pods Manifest.lock */,
+				C3283E7B2251D93C00E44E58 /* Sources */,
+				C3283E7C2251D93C00E44E58 /* Frameworks */,
+				C3283E7D2251D93C00E44E58 /* Resources */,
+				7BAAA5635BDE69A801EF0395 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PW;
+			productName = PW;
+			productReference = C3283E7F2251D93C00E44E58 /* PW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3283E922251D93D00E44E58 /* PWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3283EAA2251D93D00E44E58 /* Build configuration list for PBXNativeTarget "PWTests" */;
+			buildPhases = (
+				172B69D60B036A7465BF922F /* [CP] Check Pods Manifest.lock */,
+				C3283E8F2251D93D00E44E58 /* Sources */,
+				C3283E902251D93D00E44E58 /* Frameworks */,
+				C3283E912251D93D00E44E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3283E952251D93D00E44E58 /* PBXTargetDependency */,
+			);
+			name = PWTests;
+			productName = PWTests;
+			productReference = C3283E932251D93D00E44E58 /* PWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3283E9D2251D93D00E44E58 /* PWUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3283EAD2251D93D00E44E58 /* Build configuration list for PBXNativeTarget "PWUITests" */;
+			buildPhases = (
+				B5ABDBF7333F4D1E3323C8B1 /* [CP] Check Pods Manifest.lock */,
+				C3283E9A2251D93D00E44E58 /* Sources */,
+				C3283E9B2251D93D00E44E58 /* Frameworks */,
+				C3283E9C2251D93D00E44E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3283EA02251D93D00E44E58 /* PBXTargetDependency */,
+			);
+			name = PWUITests;
+			productName = PWUITests;
+			productReference = C3283E9E2251D93D00E44E58 /* PWUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3283E772251D93C00E44E58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Vladislav Novoseltsev";
+				TargetAttributes = {
+					C3283E7E2251D93C00E44E58 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					C3283E922251D93D00E44E58 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C3283E7E2251D93C00E44E58;
+					};
+					C3283E9D2251D93D00E44E58 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = C3283E7E2251D93C00E44E58;
+					};
+				};
+			};
+			buildConfigurationList = C3283E7A2251D93C00E44E58 /* Build configuration list for PBXProject "PW" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3283E762251D93C00E44E58;
+			productRefGroup = C3283E802251D93C00E44E58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3283E7E2251D93C00E44E58 /* PW */,
+				C3283E922251D93D00E44E58 /* PWTests */,
+				C3283E9D2251D93D00E44E58 /* PWUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3283E7D2251D93C00E44E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3283EEF2251E65500E44E58 /* PWSplashScreenViewController.xib in Resources */,
+				C3283E8D2251D93D00E44E58 /* LaunchScreen.storyboard in Resources */,
+				C3283F292251EB2F00E44E58 /* PWLoginVC.xib in Resources */,
+				C37D34272253297100F69941 /* PWHistoryTransactionVC.xib in Resources */,
+				C3283E8A2251D93D00E44E58 /* Assets.xcassets in Resources */,
+				C3342C542253546700426A67 /* Localizable.strings in Resources */,
+				C37D337A22531C9000F69941 /* MainScreenVC.xib in Resources */,
+				C3342C6522545B5500426A67 /* PWItemHistory.xib in Resources */,
+				C3283E882251D93C00E44E58 /* Main.storyboard in Resources */,
+				C3342C8B2254781800426A67 /* PWSendTransactionVC.xib in Resources */,
+				C37D344222532A4700F69941 /* PWCreateTransaction.xib in Resources */,
+				C3283F2E2251EB8E00E44E58 /* PWSignUpVC.xib in Resources */,
+				C3342C6E225470D100426A67 /* ItemCreateTransactionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3283E912251D93D00E44E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3283E9C2251D93D00E44E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		172B69D60B036A7465BF922F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PWTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BAAA5635BDE69A801EF0395 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PW/Pods-PW-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TableKit/TableKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TableKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PW/Pods-PW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5ABDBF7333F4D1E3323C8B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PWUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3F2C34803FFC19FDFA42B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3283E7B2251D93C00E44E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3342C5A2253641E00426A67 /* PWUser.swift in Sources */,
+				C3283EDD2251E47300E44E58 /* PWSplashScreenWireframeProtocol.swift in Sources */,
+				C3283EEB2251E56800E44E58 /* PWSplashScreenRemoteDM.swift in Sources */,
+				C37D337622531C7E00F69941 /* MainScreenWireframeProtocol.swift in Sources */,
+				C3283ED72251E43100E44E58 /* PWSplaschScreenWireframe.swift in Sources */,
+				C37D336E22531C3A00F69941 /* MainScreenVMProtocol.swift in Sources */,
+				C3342C58225362C200426A67 /* PWUserInfo.swift in Sources */,
+				C3283F222251E98300E44E58 /* PWLoginInteractorPorotocol.swift in Sources */,
+				C37D343422532A1A00F69941 /* PWCreateTransactionRemoteDMProtocol.swift in Sources */,
+				C3283EB82251DA2900E44E58 /* PWNavigationController.swift in Sources */,
+				C37D343922532A1A00F69941 /* PWCreateTransactionInteractor.swift in Sources */,
+				C3283F062251E97200E44E58 /* PWSignUpLocalDM.swift in Sources */,
+				C3283F032251E97200E44E58 /* PWSignUpVM.swift in Sources */,
+				C3283ECC2251DDDD00E44E58 /* AppDelegateExt.swift in Sources */,
+				C3283E852251D93C00E44E58 /* ViewController.swift in Sources */,
+				C3283F282251EB2F00E44E58 /* PWLoginVC.swift in Sources */,
+				C3283F1D2251E98300E44E58 /* PWSLoginWireframe.swift in Sources */,
+				C37D343822532A1A00F69941 /* PWCreateTransactionLocalDM.swift in Sources */,
+				C3283F082251E97200E44E58 /* PWSignUpRemoteDMProtocol.swift in Sources */,
+				C37D344122532A4700F69941 /* PWCreateTransaction.swift in Sources */,
+				C3342C8A2254781800426A67 /* PWSendTransactionVC.swift in Sources */,
+				C3283ECA2251DD4500E44E58 /* UIViewControllerExt.swift in Sources */,
+				C3283EBC2251DA5000E44E58 /* PWRemoteDM.swift in Sources */,
+				C37D338022531CCD00F69941 /* MainScreenWireframe.swift in Sources */,
+				C37D341C2253292C00F69941 /* PWHistoryTransactionVM.swift in Sources */,
+				C3283F022251E97200E44E58 /* PWSignUpWireframe.swift in Sources */,
+				C3283EB42251DA0100E44E58 /* PWWireframe.swift in Sources */,
+				C37D341A2253292C00F69941 /* PWHistoryTransactionRemoteDMswift.swift in Sources */,
+				C37D34262253297100F69941 /* PWHistoryTransactionVC.swift in Sources */,
+				C3283F1F2251E98300E44E58 /* PWLoginLocalDMProtocol.swift in Sources */,
+				C3342C80225477D200426A67 /* PWSendTransactionVM.swift in Sources */,
+				C3342C5C225364A100426A67 /* PWTransaction.swift in Sources */,
+				C3283F092251E97200E44E58 /* PWSignUpWireframeProtocol.swift in Sources */,
+				C3283F0C2251E97200E44E58 /* PWSignUpVMProtocol.swift in Sources */,
+				C37D341F2253292C00F69941 /* PWHistoryTransactionVMProtocol.swift in Sources */,
+				C3283EDF2251E48E00E44E58 /* PWSplashScreenInteractorPorotocol.swift in Sources */,
+				C37D337022531C5500F69941 /* MainScreenLocalDMProtocol.swift in Sources */,
+				C3283F052251E97200E44E58 /* PWSignUpRemoteDM.swift in Sources */,
+				C37D337422531C7100F69941 /* MainScreenInteractorProtocol.swift in Sources */,
+				C3283EC42251DBFC00E44E58 /* StringExt.swift in Sources */,
+				C37D344422532C4300F69941 /* PWTabBarItem.swift in Sources */,
+				C37D337C22531CB400F69941 /* MainScreenLocalDM.swift in Sources */,
+				C3283F1C2251E98300E44E58 /* PWLoginVM.swift in Sources */,
+				C37D34192253292C00F69941 /* PWHistoryTransactionRemoteDMProtocol.swift in Sources */,
+				C31CC33E2252237F00A54281 /* PWTokenResponse.swift in Sources */,
+				C37D343622532A1A00F69941 /* PWCreateTransactionInteractorProtocol.swift in Sources */,
+				C3342C7E225477D200426A67 /* PWSendTransactionRemoteDMswift.swift in Sources */,
+				C3283EE12251E4C700E44E58 /* PWSplashScreenVCProtocol.swift in Sources */,
+				C37D34182253292C00F69941 /* PWHistoryTransactionWireframeProtocol.swift in Sources */,
+				C3283F202251E98300E44E58 /* PWLoginRemoteDMProtocol.swift in Sources */,
+				C3283EF12251E6D100E44E58 /* NSObjectExt.swift in Sources */,
+				C3342C6422545B5500426A67 /* PWItemHistory.swift in Sources */,
+				C37D343B22532A1A00F69941 /* PWCreateTransactionWireframe.swift in Sources */,
+				C3283EE32251E4EC00E44E58 /* PWSplashScreenVMProtocol.swift in Sources */,
+				C3283EE92251E54E00E44E58 /* PWSplashScreenLocalDM.swift in Sources */,
+				C3283ED52251E41A00E44E58 /* PWSplashScreenVM.swift in Sources */,
+				C3342C60225365A600426A67 /* PWHistoryTransaction.swift in Sources */,
+				C37D337E22531CC000F69941 /* MainScreenRemoteDM.swift in Sources */,
+				C3283F2D2251EB8E00E44E58 /* PWSignUpVC.swift in Sources */,
+				C3283F1A2251E98300E44E58 /* PWLoginRemoteDM.swift in Sources */,
+				C3283EC72251DCF500E44E58 /* UIApplicationExt.swift in Sources */,
+				C3342C7D225477D200426A67 /* PWSendTransactionRemoteDMProtocol.swift in Sources */,
+				C3283EE72251E51500E44E58 /* PWSplashScreenRemoteDMProtocol.swift in Sources */,
+				C3283F212251E98300E44E58 /* PWLoginWireframeProtocol.swift in Sources */,
+				C3283F242251E98300E44E58 /* PWLoginVMProtocol.swift in Sources */,
+				C3283F0A2251E97200E44E58 /* PWSignUpnteractorPorotocol.swift in Sources */,
+				C37D343222532A1A00F69941 /* PWCreateTransactionLocalDMProtocol.swift in Sources */,
+				C3283EE52251E50000E44E58 /* PWSPlashScreenLocalDMProtocol.swift in Sources */,
+				C31CC33722521F2900A54281 /* NetworkRequest.swift in Sources */,
+				C37D34202253292C00F69941 /* PWHistoryTransactionWireframe.swift in Sources */,
+				C37D343522532A1A00F69941 /* PWCreateTransactionRemoteDMswift.swift in Sources */,
+				C3342C81225477D200426A67 /* PWSendTransactionLocalDM.swift in Sources */,
+				C37D337922531C9000F69941 /* MainScreenVC.swift in Sources */,
+				C3283F1B2251E98300E44E58 /* PWLoginLocalDM.swift in Sources */,
+				C37D336522531B5500F69941 /* PWTabBarVC.swift in Sources */,
+				C3342C68225468B300426A67 /* UIViewExt.swift in Sources */,
+				C3283ECE2251E00A00E44E58 /* PWConstants.swift in Sources */,
+				C3283F042251E97200E44E58 /* PWSignUpInteractor.swift in Sources */,
+				C37D343322532A1A00F69941 /* PWCreateTransactionWireframeProtocol.swift in Sources */,
+				C3283F072251E97200E44E58 /* PWSignUpLocalDMProtocol.swift in Sources */,
+				C3283F232251E98300E44E58 /* PWLoginVCProtocol.swift in Sources */,
+				C3342C83225477D200426A67 /* PWSendTransactionVMProtocol.swift in Sources */,
+				C3342C6D225470D100426A67 /* ItemCreateTransactionCell.swift in Sources */,
+				C37D341E2253292C00F69941 /* PWHistoryTransactionInteractor.swift in Sources */,
+				C37D343A22532A1A00F69941 /* PWCreateTransactionVMProtocol.swift in Sources */,
+				C3283F1E2251E98300E44E58 /* PWLoginInteractor.swift in Sources */,
+				C3283F0B2251E97200E44E58 /* PWSignUpVCProtocol.swift in Sources */,
+				C3283E832251D93C00E44E58 /* AppDelegate.swift in Sources */,
+				C3283F302251F0FA00E44E58 /* UITextView.swift in Sources */,
+				C37D336922531C1800F69941 /* MainScreenVM.swift in Sources */,
+				C37D341D2253292C00F69941 /* PWHistoryTransactionLocalDM.swift in Sources */,
+				C3283EEE2251E65500E44E58 /* PWSplashScreenViewController.swift in Sources */,
+				C3342C5E2253654300426A67 /* PWAddTransaction.swift in Sources */,
+				C37D337222531C6400F69941 /* MainScreenRemoteDMProtocol.swift in Sources */,
+				C3283EBE2251DA5F00E44E58 /* PWLocalDM.swift in Sources */,
+				C3342C84225477D200426A67 /* PWSendTransactionWireframe.swift in Sources */,
+				C3283EB22251D9F300E44E58 /* PWViewModel.swift in Sources */,
+				C3283ED92251E44700E44E58 /* PWSplashScreenInteractor.swift in Sources */,
+				C3283EC02251DA6E00E44E58 /* PWUserDefaults.swift in Sources */,
+				C3283EBA2251DA3A00E44E58 /* PWViewController.swift in Sources */,
+				C37D341B2253292C00F69941 /* PWHistoryTransactionInteractorProtocol.swift in Sources */,
+				C3342C7F225477D200426A67 /* PWSendTransactionInteractorProtocol.swift in Sources */,
+				C3342C82225477D200426A67 /* PWSendTransactionInteractor.swift in Sources */,
+				C3342C7B225477D200426A67 /* PWSendTransactionLocalDMProtocol.swift in Sources */,
+				C37D343722532A1A00F69941 /* PWCreateTransactionVM.swift in Sources */,
+				C37D338222531CD800F69941 /* MainScreenInteractor.swift in Sources */,
+				C31CC33922521F7500A54281 /* NetworkRouter.swift in Sources */,
+				C37D34172253292C00F69941 /* PWHistoryTransactionLocalDMProtocol.swift in Sources */,
+				C31CC33B2252228300A54281 /* URLRequestExt.swift in Sources */,
+				C3342C7C225477D200426A67 /* PWSendTransactionWireframeProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3283E8F2251D93D00E44E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3283E982251D93D00E44E58 /* PWTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3283E9A2251D93D00E44E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3283EA32251D93D00E44E58 /* PWUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3283E952251D93D00E44E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3283E7E2251D93C00E44E58 /* PW */;
+			targetProxy = C3283E942251D93D00E44E58 /* PBXContainerItemProxy */;
+		};
+		C3283EA02251D93D00E44E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3283E7E2251D93C00E44E58 /* PW */;
+			targetProxy = C3283E9F2251D93D00E44E58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3283E862251D93C00E44E58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3283E872251D93C00E44E58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3283E8B2251D93D00E44E58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3283E8C2251D93D00E44E58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3283EA52251D93D00E44E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3283EA62251D93D00E44E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3283EA82251D93D00E44E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D51D0E356B8E348F472AE5FA /* Pods-PW.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JB7K26S8YN;
+				INFOPLIST_FILE = PW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shop.PW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3283EA92251D93D00E44E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC7A3A3BCC8CE2A64E5D1C8A /* Pods-PW.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JB7K26S8YN;
+				INFOPLIST_FILE = PW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shop.PW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3283EAB2251D93D00E44E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837AE861973D047943437E57 /* Pods-PWTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JB7K26S8YN;
+				INFOPLIST_FILE = PWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shop.PWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PW.app/PW";
+			};
+			name = Debug;
+		};
+		C3283EAC2251D93D00E44E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C653DF0889DDD96E23B311 /* Pods-PWTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JB7K26S8YN;
+				INFOPLIST_FILE = PWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shop.PWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PW.app/PW";
+			};
+			name = Release;
+		};
+		C3283EAE2251D93D00E44E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822AF8A00E7275F6F65A144F /* Pods-PWUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JB7K26S8YN;
+				INFOPLIST_FILE = PWUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shop.PWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PW;
+			};
+			name = Debug;
+		};
+		C3283EAF2251D93D00E44E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99401FC0360E77E3E98D21E3 /* Pods-PWUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JB7K26S8YN;
+				INFOPLIST_FILE = PWUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shop.PWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PW;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3283E7A2251D93C00E44E58 /* Build configuration list for PBXProject "PW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3283EA52251D93D00E44E58 /* Debug */,
+				C3283EA62251D93D00E44E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3283EA72251D93D00E44E58 /* Build configuration list for PBXNativeTarget "PW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3283EA82251D93D00E44E58 /* Debug */,
+				C3283EA92251D93D00E44E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3283EAA2251D93D00E44E58 /* Build configuration list for PBXNativeTarget "PWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3283EAB2251D93D00E44E58 /* Debug */,
+				C3283EAC2251D93D00E44E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3283EAD2251D93D00E44E58 /* Build configuration list for PBXNativeTarget "PWUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3283EAE2251D93D00E44E58 /* Debug */,
+				C3283EAF2251D93D00E44E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3283E772251D93C00E44E58 /* Project object */;
+}

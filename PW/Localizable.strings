@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  PW
+
+  Created by Vladislav Novoseltsev on 02/04/2019.
+  Copyright © 2019 Vladislav Novoseltsev. All rights reserved.
+*/
+
+"main.title.signup"="Sign Up";
+"main.title.signin"="Sign In";
+"main.title.logout"="Logout";
+
+"main.title.balance"="Balance";
+"main.title.email"="Email";
+"main.title.password"="Password";
+"main.title.confirm_password"="Confirm Password";
+"main.title.name"="Name";
+"main.title.id"="Id";
+
+"main.title.main"="Main";
+"main.title.history"="History";
+"main.title.create"="Create";
+
+"main.title.users"="Users";
+"main.title.create_transaction"="Create Transaction";
+
+"main.title.send"="Send";
+"main.title.amount"="Amount";
+"main.title.amount_to"="To";
+
+"transaction.message.success"="Success";

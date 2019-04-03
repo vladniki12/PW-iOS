@@ -1,0 +1,6 @@
+framework module Pods_PW {
+  umbrella header "Pods-PW-umbrella.h"
+
+  export *
+  module * { export * }
+}
